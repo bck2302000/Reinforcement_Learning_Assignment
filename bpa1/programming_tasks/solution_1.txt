@@ -1,0 +1,10 @@
+Task 1 - Policy Iteration
+
+Answers:
+
+
+6) 	Rounds of policy iteration for start state to become non-zero: 3
+
+7) 	Rounds of policy iteration to converge to an optimal policy: 
+
+        It depends on the number of policy evaluation iteration. With policy evaluation number as 10, it took 4 policy iterations. With policy evaluation number as 3, it took 6 policy iterations. 
