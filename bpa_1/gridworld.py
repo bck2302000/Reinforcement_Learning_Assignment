@@ -1,23 +1,18 @@
 import optparse
-import random
 import sys
 
 import environment
 import mdp
 from gridworldClass import Gridworld
 from RandomAgent import RandomAgent
-from PolicyIterationAgent import PolicyIterationAgent
-# from ValueIterationAgent import ValueIterationAgent
-# from QLearningAgent import QLearningAgent
-
+import numpy as np
 
 # THE FOLLOWING AGENTS WILL BE COMPLETED DURING THE TASKS
-#from PolicyIterationAgent import PolicyIterationAgent  # TASK 1
-#from ValueIterationAgent import ValueIterationAgent  # TASK 2
-#from QLearningAgent import QLearningAgent  # TASK 3
+# from PolicyIterationAgent import PolicyIterationAgent  # TASK 1
+# from ValueIterationAgent import ValueIterationAgent  # TASK 2
+# from QLearningAgent import QLearningAgent  # TASK 3
 
 
-# THE FOLLOWING AGENTS WILL BE COMPLETED DURING THE TASKS
 # THE GRIDWORLD MAIN CODE AND TEST HARNESS
 
 
@@ -36,7 +31,7 @@ class GridworldEnvironment(environment.Environment):
     def doAction(self, action):
         successors = self.gridWorld.getTransitionStatesAndProbs(self.state, action)
         sum = 0.0
-        rand = random.random()
+        rand = np.random.random()
         state = self.getCurrentState()
         for nextState, prob in successors:
             sum += prob
@@ -62,16 +57,12 @@ def getCliffGrid():
 
 
 def getCliffGrid2():
-    print('not implemented') # remove this aver implementing the gridworld
-
+    print('not implemented')  # remove this after implementing the gridworld
     # **********
     # TODO 1.7
-    
-    grid = [[' ', ' ', ' ', ' ', ' '],
-            [8, 'S', ' ', ' ', 10],
-            [-100, -100, -100, -100, -100]]
-    return Gridworld(grid)
+
     # **********
+
 
 def getDiscountGrid():
     grid = [[' ', ' ', ' ', ' ', ' '],
@@ -79,7 +70,6 @@ def getDiscountGrid():
             [' ', '#', 1, '#', 10],
             ['S', ' ', ' ', ' ', ' '],
             [-10, -10, -10, -10, -10]]
-
     return Gridworld(grid)
 
 
@@ -191,7 +181,8 @@ def parseOptions():
                          metavar="P", help='TD learning rate (default %default)')
     optParser.add_option('-i', '--iterations', action='store',
                          type='int', dest='iters', default=10,
-                         metavar="K", help='Number of rounds of policy evaluation or value iteration (default %default)')
+                         metavar="K",
+                         help='Number of rounds of policy evaluation or value iteration (default %default)')
     optParser.add_option('-k', '--episodes', action='store',
                          type='int', dest='episodes', default=0,
                          metavar="K", help='Number of epsiodes of the MDP to run (default %default)')
@@ -264,6 +255,7 @@ if __name__ == '__main__':
     ###########################
     # GET THE AGENT
     ###########################
+    np.random.seed(42)
 
     a = None
     if opts.agent == 'value':
@@ -287,7 +279,7 @@ if __name__ == '__main__':
     # OPEN TESTING FILE
     agent_name = str(a).strip('<')
     agent_name = str(agent_name.split(".")[0])
-    with open('./output_%s.txt' % (agent_name), 'a') as f:
+    with open('./output_%s.txt' % (agent_name), 'w') as f:
         f.write('\n\n Testing the %s on the %s \n\n ' % (agent_name, opts.grid))
 
     # DISPLAY Q/V VALUES BEFORE SIMULATION OF EPISODES
@@ -300,10 +292,14 @@ if __name__ == '__main__':
     # FIGURE OUT WHAT TO DISPLAY EACH TIME STEP (IF ANYTHING)
     displayCallback = lambda x: None
     if not opts.quiet:
-        if opts.agent == 'random': displayCallback = lambda state: display.displayValues(a, state, "CURRENT VALUES")
-        if opts.agent == 'policyiter': displayCallback = lambda state: display.displayValues(a, state, "CURRENT VALUES")
-        if opts.agent == 'value': displayCallback = lambda state: display.displayValues(a, state, "CURRENT VALUES")
-        if opts.agent == 'q': displayCallback = lambda state: display.displayQValues(a, state, "CURRENT Q-VALUES")
+        if opts.agent == 'random': displayCallback = lambda state: display.displayValues(a, state, "CURRENT VALUES",
+                                                                                         False)
+        if opts.agent == 'policyiter': displayCallback = lambda state: display.displayValues(a, state, "CURRENT VALUES",
+                                                                                             False)
+        if opts.agent == 'value': displayCallback = lambda state: display.displayValues(a, state, "CURRENT VALUES",
+                                                                                        False)
+        if opts.agent == 'q': displayCallback = lambda state: display.displayQValues(a, state, "CURRENT Q-VALUES",
+                                                                                     False)
 
     messageCallback = lambda x: printString(x)
     if opts.quiet:

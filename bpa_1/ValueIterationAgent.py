@@ -1,5 +1,5 @@
 from agent import Agent
-
+import numpy as np
 
 # TASK 2
 class ValueIterationAgent(Agent):
@@ -26,16 +26,16 @@ class ValueIterationAgent(Agent):
             newV = {}
             for s in states:
                 actions = self.mdp.getPossibleActions(s)
-            # **************
-            # TODO 2.1. b)
-            # if ...
-            #
-            # else: ...
+                # **************
+                # TODO 2.1. b)
+                # if ...
+                #
+                # else: ...
 
-            # Update value function with new estimate
-            # self.V =
+                # Update value function with new estimate
+                # self.V =
 
-            # ***************
+                # ***************
 
     def getValue(self, state):
         """
@@ -72,10 +72,10 @@ class ValueIterationAgent(Agent):
 
         else:
 
-    # **********
-    # TODO 2.4
+        # **********
+        # TODO 2.4
 
-    # ***********
+        # ***********
 
     def getAction(self, state):
         """

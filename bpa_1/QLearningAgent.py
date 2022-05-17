@@ -1,3 +1,6 @@
+import numpy as np
+
+import util
 from agent import Agent
 
 
@@ -5,7 +8,7 @@ from agent import Agent
 
 class QLearningAgent(Agent):
 
-    def __init__(self, actionFunction, discount=0.9, learningRate=0.1, epsilon=0.2):
+    def __init__(self, actionFunction, discount=0.9, learningRate=0.1, epsilon=0.3):
         """ A Q-Learning agent gets nothing about the mdp on construction other than a function mapping states to
         actions. The other parameters govern its exploration strategy and learning rate. """
         self.setLearningRate(learningRate)

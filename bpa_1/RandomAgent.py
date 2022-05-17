@@ -1,8 +1,6 @@
-import random
+import numpy as np
 
 from agent import Agent
-
-random.seed(42)
 
 
 class RandomAgent(Agent):
@@ -14,7 +12,7 @@ class RandomAgent(Agent):
         self.actionFunction = actionFunction
 
     def getAction(self, state):
-        return random.choice(self.actionFunction(state))
+        return np.random.choice(self.actionFunction(state))
 
     def getValue(self, state):
         return 0.0

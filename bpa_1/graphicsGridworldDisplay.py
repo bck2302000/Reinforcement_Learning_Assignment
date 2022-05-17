@@ -17,7 +17,7 @@ class GraphicsGridworldDisplay:
     def pause(self):
         wait_for_keys()
 
-    def displayValues(self, agent, currentState=None, message='Agent Values'):
+    def displayValues(self, agent, currentState=None, message='Agent Values', printing=True):
         values = util.Counter()  # values are a dict that maps the states (coordinates) to values
         policy = {}  # policy is a dict that maps the coordinates to movement directions 'east' etc.
         states = self.gridworld.getStates()  # states are list of 2-tuples = coordinates
@@ -28,21 +28,22 @@ class GraphicsGridworldDisplay:
         grid = self.gridworld.grid
 
         # WRITE VALUES AND POLICY IN A FILE
-        agent_name = str(agent).strip('<')
-        agent_name = agent_name.split(".")[0]
-        with open('./output_%s.txt' % (agent_name), 'a') as f:
-            f.write('values \n ')
-            for coords, value in values.items():
-                f.write('at (%i, %i) : %f\n ' % (coords[0], coords[1], value))
+        if printing:
+            agent_name = str(agent).strip('<')
+            agent_name = agent_name.split(".")[0]
+            with open('./output_%s.txt' % (agent_name), 'a') as f:
+                f.write('values \n ')
+                for coords, value in values.items():
+                    f.write('at (%i, %i) : %f\n ' % (coords[0], coords[1], value))
 
-            f.write('\n policy \n ')
-            for coords, pol in policy.items():
-                f.write('at (%i, %i) move %s \n' % (coords[0], coords[1], str(pol)))
+                f.write('\n policy \n ')
+                for coords, pol in policy.items():
+                    f.write('at (%i, %i) move %s \n' % (coords[0], coords[1], str(pol)))
 
         drawValues(self.gridworld, values, policy, currentState, message)
         sleep(0.05 / self.speed)
 
-    def displayQValues(self, agent, currentState=None, message='Agent Q-Values'):
+    def displayQValues(self, agent, currentState=None, message='Agent Q-Values', printing=True):
         qValues = util.Counter()  # dict key = coords 2tuple, dir as 2tuple  and value = qvalue  {((0,0), 'dir'): qval}
         states = self.gridworld.getStates()
         grid = self.gridworld.grid
@@ -51,12 +52,13 @@ class GraphicsGridworldDisplay:
                 qValues.setCount((state, action), agent.getQValue(state, action))
 
         # WRITE Q-VALUES IN A FILE
-        agent_name = str(agent).strip('<')
-        agent_name = agent_name.split(".")[0]
-        with open('./output_%s.txt' % (agent_name), 'a') as f:
-            f.write('\n q-values \n ')
-            for coords, qval in qValues.items():
-                f.write('at (%i, %i) for moving %s : %f \n' % (coords[0][0], coords[0][1], coords[1], qval))
+        if printing:
+            agent_name = str(agent).strip('<')
+            agent_name = agent_name.split(".")[0]
+            with open('./output_%s.txt' % (agent_name), 'a') as f:
+                f.write('\n q-values \n ')
+                for coords, qval in qValues.items():
+                    f.write('at (%i, %i) for moving %s : %f \n' % (coords[0][0], coords[0][1], coords[1], qval))
 
         drawQValues(self.gridworld, qValues, currentState, message)
         sleep(0.05 / self.speed)
