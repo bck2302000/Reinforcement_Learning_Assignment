@@ -2,6 +2,8 @@ from agent import Agent
 import numpy as np
 
 # TASK 2
+
+
 class ValueIterationAgent(Agent):
 
     def __init__(self, mdp, discount=0.9, iterations=100):
@@ -20,6 +22,8 @@ class ValueIterationAgent(Agent):
         #  TODO 2.1 a)
         # self.V = ...
 
+        self.V = {s: 0 for s in states}
+
         # ************
 
         for i in range(iterations):
@@ -32,8 +36,18 @@ class ValueIterationAgent(Agent):
                 #
                 # else: ...
 
+                if len(actions) < 1:
+                    newV[s] = 0.0
+                else:
+                    q_value = (
+                        [self.getQValue(s, a) for a in actions]
+                    )
+                    newV[s] = max(q_value)
+
                 # Update value function with new estimate
                 # self.V =
+
+            self.V = newV
 
                 # ***************
 
@@ -46,6 +60,7 @@ class ValueIterationAgent(Agent):
         # TODO 2.2
 
         # **********
+        return self.V[state]
 
     def getQValue(self, state, action):
         """
@@ -60,6 +75,15 @@ class ValueIterationAgent(Agent):
 
         # **********
 
+        # copy from task 1
+        r = self.mdp.getReward(state, action, None)
+        list_pair = self.mdp.getTransitionStatesAndProbs(state, action)
+        q_value = sum(
+            [p * (r + self.discount * self.V[next_state])
+             for next_state, p in list_pair]
+        )
+        return q_value
+
     def getPolicy(self, state):
         """
         Look up the policy's recommendation for the state
@@ -71,11 +95,13 @@ class ValueIterationAgent(Agent):
             return None
 
         else:
+            q_value = [self.getQValue(state, a) for a in actions]
+            action_idx = np.argmax(q_value)
 
-        # **********
-        # TODO 2.4
-
-        # ***********
+            # **********
+            # TODO 2.4
+            return actions[action_idx]
+            # ***********
 
     def getAction(self, state):
         """

@@ -47,7 +47,7 @@ class PolicyIterationAgent(Agent):
                     if a == None:
                         newV[s] = 0.0
                     else:
-                        # for deterministic policy
+                        # deterministic policy
                         newV[s] = self.getQValue(s, a)
 
                 # update value estimate
