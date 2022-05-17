@@ -5,6 +5,7 @@ import environment
 import mdp
 from gridworldClass import Gridworld
 from RandomAgent import RandomAgent
+from PolicyIterationAgent import PolicyIterationAgent
 import numpy as np
 
 # THE FOLLOWING AGENTS WILL BE COMPLETED DURING THE TASKS
