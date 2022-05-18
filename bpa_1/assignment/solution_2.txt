@@ -3,17 +3,19 @@ Task 2 - Value Iteration
 Answers:
 
 
-6) 	Rounds of value iteration for start state to become non-zero: xxx
-    Why? xxx
+6) 	Rounds of value iteration for start state to become non-zero: 10
+    Why? 
+    Firstly, in each round of iteration, we only perform one sweep. In order to change the value, we need the sum of dynamics * (reward + discount * next_state_value) to be non-zero.
+    In MazeGrid, We initialize all state value to zero, and the only non-zero reward is in terminal state. Therefore, we need the value to propagate from terminal state to initial state, then we can update the corresponding value. In this case, this question can be solved by finding the shortest path from terminal state to initial state, which is 10.
 
-7) 	Which parameter to change: xxx
-	Value of the changed parameter: xxx
+7) 	Which parameter to change: noise
+	Value of the changed parameter: 0.01
 
 8)	Parameter values producing optimal policy types:
 	    a) -n xxx -d xxx
 	    b) -n xxx -d xxx
 	    c) -n xxx -d xxx
-	    d) -n xxx -d xxx
+	    d) -n 0.2 -d 0.9
 	    e) -n xxx -d xxx
 
 9) 	Pros: 								Cons:
