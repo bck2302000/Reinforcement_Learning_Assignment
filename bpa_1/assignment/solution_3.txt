@@ -4,9 +4,9 @@ Answers:
 
 
 6) 	Training the Q-learning agent without noise:
-        a) Value at state (1, 5): xxx
-        b) Optimal policy : yes / no
-        c) Name of parameter: xxx
+        a) Value at state (1, 5): 0.0
+        b) Optimal policy : no
+        c) Name of parameter: epsilon
 
 7) 	Comparison of values for the start state:
         1) Value of the start state after 300 episodes: xxx
