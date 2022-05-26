@@ -7,8 +7,8 @@ import mdp
 from gridworldClass import Gridworld
 from RandomAgent import RandomAgent
 from PolicyIterationAgent import PolicyIterationAgent
-# from ValueIterationAgent import ValueIterationAgent
-# from QLearningAgent import QLearningAgent
+from ValueIterationAgent import ValueIterationAgent
+from QLearningAgent import QLearningAgent
 
 
 # THE FOLLOWING AGENTS WILL BE COMPLETED DURING THE TASKS

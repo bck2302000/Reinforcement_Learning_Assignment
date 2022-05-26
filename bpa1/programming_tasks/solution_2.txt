@@ -3,22 +3,22 @@ Task 2 - Value Iteration
 Answers:
 
 
-6) 	Rounds of value iteration for start state to become non-zero: xxx
-    Why? xxx
+6) 	Rounds of value iteration for start state to become non-zero: 10
+    Why? 
 
-7) 	Which parameter to change: xxx
-	Value of the changed parameter: xxx
+7) 	Which parameter to change: Noise
+	Value of the changed parameter: 0.01
 
 8)	Parameter values producing optimal policy types:
-	    a) -n xxx -d xxx
-	    b) -n xxx -d xxx
-	    c) -n xxx -d xxx
-	    d) -n xxx -d xxx
-	    e) -n xxx -d xxx
+	    a) -n 0.1 -d 0.03
+	    b) -n 0.4 -d 0.4
+	    c) -n 0.1 -d 0.8
+	    d) -n 0.4 -d 0.8
+	    e) -n 0.0 -d 0.0
 
 9) 	Pros: 								Cons:
-		-									-
-		-									-
-		-									-
+		-									- Requires a full policy evaluation for each updated policy
+		-									- Requires iterative computation with typically multiple sweeps through the state set
+		-									- Can be computationally expensive
 		-									-
 

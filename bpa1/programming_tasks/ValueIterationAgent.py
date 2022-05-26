@@ -1,5 +1,5 @@
 from agent import Agent
-
+import numpy as np
 
 # TASK 2
 class ValueIterationAgent(Agent):
@@ -20,6 +20,8 @@ class ValueIterationAgent(Agent):
         #  TODO 2.1 a)
         # self.V = ...
 
+        self.V = {s : 0 for s in states}
+
         # ************
 
         for i in range(iterations):
@@ -31,10 +33,14 @@ class ValueIterationAgent(Agent):
             # if ...
             #
             # else: ...
+                newV[s] = 0
 
+                if s != self.mdp.terminalState:
+                    possible_q = [self.getQValue(s, action) for action in actions]
+                    newV[s] = np.max(possible_q)
             # Update value function with new estimate
             # self.V =
-
+            self.V = newV
             # ***************
 
     def getValue(self, state):
@@ -44,7 +50,7 @@ class ValueIterationAgent(Agent):
         """
         # **********
         # TODO 2.2
-
+        return self.V[state]
         # **********
 
     def getQValue(self, state, action):
@@ -58,6 +64,11 @@ class ValueIterationAgent(Agent):
         # ***********
         # TODO 2.3.
 
+        q_val = 0
+        for real_dir in self.mdp.getTransitionStatesAndProbs(state, action):
+            q_val += real_dir[1] * (self.mdp.getReward(state, None, None) + self.discount * self.V[real_dir[0]])
+
+        return q_val
         # **********
 
     def getPolicy(self, state):
@@ -71,7 +82,8 @@ class ValueIterationAgent(Agent):
             return None
 
         else:
-
+            possible_q = [self.getQValue(state, action) for action in actions]
+            return actions[np.argmax(possible_q)]
     # **********
     # TODO 2.4
 

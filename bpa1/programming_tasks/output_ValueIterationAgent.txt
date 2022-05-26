@@ -1,0 +1,1466 @@
+ Testing the ValueIterationAgent on the MazeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.666748
+ at (0, 1) : 0.760413
+ at (0, 2) : 0.866341
+ at (0, 3) : 1.000000
+ at (1, 2) : 0.760413
+ at (2, 0) : 0.000000
+ at (2, 2) : 0.654741
+ at (2, 3) : 0.557869
+ at (3, 0) : 0.000000
+ at (3, 3) : 0.473226
+ at (4, 0) : 0.051999
+ at (4, 1) : 0.150218
+ at (4, 2) : 0.263705
+ at (4, 3) : 0.367766
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move exit 
+at (1, 2) move north 
+at (2, 0) move north 
+at (2, 2) move north 
+at (2, 3) move west 
+at (3, 0) move south 
+at (3, 3) move north 
+at (4, 0) move east 
+at (4, 1) move east 
+at (4, 2) move east 
+at (4, 3) move north 
+
+ q-values 
+ at (0, 0) for moving north : 0.608503 
+at (0, 0) for moving west : 0.600073 
+at (0, 0) for moving south : 0.608503 
+at (0, 0) for moving east : 0.667512 
+at (0, 1) for moving north : 0.685475 
+at (0, 1) for moving west : 0.616933 
+at (0, 1) for moving south : 0.685475 
+at (0, 1) for moving east : 0.760639 
+at (0, 2) for moving north : 0.782202 
+at (0, 2) for moving west : 0.693905 
+at (0, 2) for moving south : 0.705934 
+at (0, 2) for moving east : 0.866408 
+at (0, 3) for moving exit : 1.000000 
+at (1, 2) for moving north : 0.760639 
+at (1, 2) for moving west : 0.684394 
+at (1, 2) for moving south : 0.608288 
+at (1, 2) for moving east : 0.684394 
+at (2, 0) for moving north : 0.000000 
+at (2, 0) for moving west : 0.000000 
+at (2, 0) for moving south : 0.000000 
+at (2, 0) for moving east : 0.000000 
+at (2, 2) for moving north : 0.656632 
+at (2, 2) for moving west : 0.598778 
+at (2, 2) for moving south : 0.580549 
+at (2, 2) for moving east : 0.529029 
+at (2, 3) for moving north : 0.510800 
+at (2, 3) for moving west : 0.564212 
+at (2, 3) for moving south : 0.449857 
+at (2, 3) for moving east : 0.494464 
+at (3, 0) for moving north : 0.000000 
+at (3, 0) for moving west : 0.004680 
+at (3, 0) for moving south : 0.037439 
+at (3, 0) for moving east : 0.004680 
+at (3, 3) for moving north : 0.486846 
+at (3, 3) for moving west : 0.424030 
+at (3, 3) for moving south : 0.349972 
+at (3, 3) for moving east : 0.424030 
+at (4, 0) for moving north : 0.018200 
+at (4, 0) for moving west : 0.042119 
+at (4, 0) for moving south : 0.055639 
+at (4, 0) for moving east : 0.112837 
+at (4, 1) for moving north : 0.136571 
+at (4, 1) for moving west : 0.064478 
+at (4, 1) for moving south : 0.136571 
+at (4, 1) for moving east : 0.216907 
+at (4, 2) for moving north : 0.236486 
+at (4, 2) for moving west : 0.155624 
+at (4, 2) for moving south : 0.236486 
+at (4, 2) for moving east : 0.312259 
+at (4, 3) for moving north : 0.397555 
+at (4, 3) for moving west : 0.265557 
+at (4, 3) for moving south : 0.321624 
+at (4, 3) for moving east : 0.340481 
+
+
+ Testing the ValueIterationAgent on the MazeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.666748
+ at (0, 1) : 0.760413
+ at (0, 2) : 0.866341
+ at (0, 3) : 1.000000
+ at (1, 2) : 0.760413
+ at (2, 0) : 0.000000
+ at (2, 2) : 0.654741
+ at (2, 3) : 0.557869
+ at (3, 0) : 0.000000
+ at (3, 3) : 0.473226
+ at (4, 0) : 0.051999
+ at (4, 1) : 0.150218
+ at (4, 2) : 0.263705
+ at (4, 3) : 0.367766
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move exit 
+at (1, 2) move north 
+at (2, 0) move north 
+at (2, 2) move north 
+at (2, 3) move west 
+at (3, 0) move south 
+at (3, 3) move north 
+at (4, 0) move east 
+at (4, 1) move east 
+at (4, 2) move east 
+at (4, 3) move north 
+
+
+ Testing the ValueIterationAgent on the MazeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.000000
+ at (0, 1) : 0.518400
+ at (0, 2) : 0.784800
+ at (0, 3) : 1.000000
+ at (1, 2) : 0.518400
+ at (2, 0) : 0.000000
+ at (2, 2) : 0.000000
+ at (2, 3) : 0.000000
+ at (3, 0) : 0.000000
+ at (3, 3) : 0.000000
+ at (4, 0) : 0.000000
+ at (4, 1) : 0.000000
+ at (4, 2) : 0.000000
+ at (4, 3) : 0.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move exit 
+at (1, 2) move north 
+at (2, 0) move north 
+at (2, 2) move north 
+at (2, 3) move north 
+at (3, 0) move north 
+at (3, 3) move north 
+at (4, 0) move north 
+at (4, 1) move north 
+at (4, 2) move north 
+at (4, 3) move north 
+
+
+ Testing the ValueIterationAgent on the MazeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.659906
+ at (0, 1) : 0.758371
+ at (0, 2) : 0.865735
+ at (0, 3) : 1.000000
+ at (1, 2) : 0.758371
+ at (2, 0) : 0.000000
+ at (2, 2) : 0.642472
+ at (2, 3) : 0.521018
+ at (3, 0) : 0.000000
+ at (3, 3) : 0.400025
+ at (4, 0) : 0.000000
+ at (4, 1) : 0.000000
+ at (4, 2) : 0.100306
+ at (4, 3) : 0.239620
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move exit 
+at (1, 2) move north 
+at (2, 0) move north 
+at (2, 2) move north 
+at (2, 3) move west 
+at (3, 0) move north 
+at (3, 3) move north 
+at (4, 0) move north 
+at (4, 1) move east 
+at (4, 2) move east 
+at (4, 3) move north 
+
+
+ Testing the ValueIterationAgent on the MazeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.664810
+ at (0, 1) : 0.759836
+ at (0, 2) : 0.866170
+ at (0, 3) : 1.000000
+ at (1, 2) : 0.759836
+ at (2, 0) : 0.000000
+ at (2, 2) : 0.650741
+ at (2, 3) : 0.545473
+ at (3, 0) : 0.000000
+ at (3, 3) : 0.447137
+ at (4, 0) : 0.000000
+ at (4, 1) : 0.072220
+ at (4, 2) : 0.190582
+ at (4, 3) : 0.318611
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move exit 
+at (1, 2) move north 
+at (2, 0) move north 
+at (2, 2) move north 
+at (2, 3) move west 
+at (3, 0) move north 
+at (3, 3) move north 
+at (4, 0) move east 
+at (4, 1) move east 
+at (4, 2) move east 
+at (4, 3) move north 
+
+
+ Testing the ValueIterationAgent on the MazeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.666748
+ at (0, 1) : 0.760413
+ at (0, 2) : 0.866341
+ at (0, 3) : 1.000000
+ at (1, 2) : 0.760413
+ at (2, 0) : 0.000000
+ at (2, 2) : 0.654741
+ at (2, 3) : 0.557869
+ at (3, 0) : 0.000000
+ at (3, 3) : 0.473226
+ at (4, 0) : 0.051999
+ at (4, 1) : 0.150218
+ at (4, 2) : 0.263705
+ at (4, 3) : 0.367766
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move exit 
+at (1, 2) move north 
+at (2, 0) move north 
+at (2, 2) move north 
+at (2, 3) move west 
+at (3, 0) move south 
+at (3, 3) move north 
+at (4, 0) move east 
+at (4, 1) move east 
+at (4, 2) move east 
+at (4, 3) move north 
+
+
+ Testing the ValueIterationAgent on the BridgeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 1) : -100.000000
+ at (0, 2) : -100.000000
+ at (0, 3) : -100.000000
+ at (0, 4) : -100.000000
+ at (0, 5) : -100.000000
+ at (1, 0) : 1.000000
+ at (1, 1) : -17.280000
+ at (1, 2) : -30.441600
+ at (1, 3) : -36.558720
+ at (1, 4) : -25.776000
+ at (1, 5) : -10.800000
+ at (1, 6) : 10.000000
+ at (2, 1) : -100.000000
+ at (2, 2) : -100.000000
+ at (2, 3) : -100.000000
+ at (2, 4) : -100.000000
+ at (2, 5) : -100.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 1) move exit 
+at (0, 2) move exit 
+at (0, 3) move exit 
+at (0, 4) move exit 
+at (0, 5) move exit 
+at (1, 0) move exit 
+at (1, 1) move west 
+at (1, 2) move west 
+at (1, 3) move east 
+at (1, 4) move east 
+at (1, 5) move east 
+at (1, 6) move exit 
+at (2, 1) move exit 
+at (2, 2) move exit 
+at (2, 3) move exit 
+at (2, 4) move exit 
+at (2, 5) move exit 
+
+
+ Testing the ValueIterationAgent on the BridgeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 1) : -100.000000
+ at (0, 2) : -100.000000
+ at (0, 3) : -100.000000
+ at (0, 4) : -100.000000
+ at (0, 5) : -100.000000
+ at (1, 0) : 1.000000
+ at (1, 1) : -8.190000
+ at (1, 2) : -15.633900
+ at (1, 3) : -16.880490
+ at (1, 4) : -9.729000
+ at (1, 5) : -0.900000
+ at (1, 6) : 10.000000
+ at (2, 1) : -100.000000
+ at (2, 2) : -100.000000
+ at (2, 3) : -100.000000
+ at (2, 4) : -100.000000
+ at (2, 5) : -100.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 1) move exit 
+at (0, 2) move exit 
+at (0, 3) move exit 
+at (0, 4) move exit 
+at (0, 5) move exit 
+at (1, 0) move exit 
+at (1, 1) move west 
+at (1, 2) move west 
+at (1, 3) move east 
+at (1, 4) move east 
+at (1, 5) move east 
+at (1, 6) move exit 
+at (2, 1) move exit 
+at (2, 2) move exit 
+at (2, 3) move exit 
+at (2, 4) move exit 
+at (2, 5) move exit 
+
+
+ Testing the ValueIterationAgent on the BridgeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 1) : -100.000000
+ at (0, 2) : -100.000000
+ at (0, 3) : -100.000000
+ at (0, 4) : -100.000000
+ at (0, 5) : -100.000000
+ at (1, 0) : 1.000000
+ at (1, 1) : -8.645000
+ at (1, 2) : -16.891475
+ at (1, 3) : -18.316974
+ at (1, 4) : -10.312250
+ at (1, 5) : -0.950000
+ at (1, 6) : 10.000000
+ at (2, 1) : -100.000000
+ at (2, 2) : -100.000000
+ at (2, 3) : -100.000000
+ at (2, 4) : -100.000000
+ at (2, 5) : -100.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 1) move exit 
+at (0, 2) move exit 
+at (0, 3) move exit 
+at (0, 4) move exit 
+at (0, 5) move exit 
+at (1, 0) move exit 
+at (1, 1) move west 
+at (1, 2) move west 
+at (1, 3) move east 
+at (1, 4) move east 
+at (1, 5) move east 
+at (1, 6) move exit 
+at (2, 1) move exit 
+at (2, 2) move exit 
+at (2, 3) move exit 
+at (2, 4) move exit 
+at (2, 5) move exit 
+
+
+ Testing the ValueIterationAgent on the BridgeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 1) : -100.000000
+ at (0, 2) : -100.000000
+ at (0, 3) : -100.000000
+ at (0, 4) : -100.000000
+ at (0, 5) : -100.000000
+ at (1, 0) : 1.000000
+ at (1, 1) : -3.847500
+ at (1, 2) : -8.222369
+ at (1, 3) : -5.554861
+ at (1, 4) : -0.891812
+ at (1, 5) : 4.275000
+ at (1, 6) : 10.000000
+ at (2, 1) : -100.000000
+ at (2, 2) : -100.000000
+ at (2, 3) : -100.000000
+ at (2, 4) : -100.000000
+ at (2, 5) : -100.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 1) move exit 
+at (0, 2) move exit 
+at (0, 3) move exit 
+at (0, 4) move exit 
+at (0, 5) move exit 
+at (1, 0) move exit 
+at (1, 1) move west 
+at (1, 2) move west 
+at (1, 3) move east 
+at (1, 4) move east 
+at (1, 5) move east 
+at (1, 6) move exit 
+at (2, 1) move exit 
+at (2, 2) move exit 
+at (2, 3) move exit 
+at (2, 4) move exit 
+at (2, 5) move exit 
+
+
+ Testing the ValueIterationAgent on the BridgeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 1) : -100.000000
+ at (0, 2) : -100.000000
+ at (0, 3) : -100.000000
+ at (0, 4) : -100.000000
+ at (0, 5) : -100.000000
+ at (1, 0) : 1.000000
+ at (1, 1) : -0.918000
+ at (1, 2) : 0.028762
+ at (1, 3) : 2.073426
+ at (1, 4) : 4.391640
+ at (1, 5) : 7.020000
+ at (1, 6) : 10.000000
+ at (2, 1) : -100.000000
+ at (2, 2) : -100.000000
+ at (2, 3) : -100.000000
+ at (2, 4) : -100.000000
+ at (2, 5) : -100.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 1) move exit 
+at (0, 2) move exit 
+at (0, 3) move exit 
+at (0, 4) move exit 
+at (0, 5) move exit 
+at (1, 0) move exit 
+at (1, 1) move west 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move east 
+at (1, 5) move east 
+at (1, 6) move exit 
+at (2, 1) move exit 
+at (2, 2) move exit 
+at (2, 3) move exit 
+at (2, 4) move exit 
+at (2, 5) move exit 
+
+
+ Testing the ValueIterationAgent on the BridgeGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 1) : -100.000000
+ at (0, 2) : -100.000000
+ at (0, 3) : -100.000000
+ at (0, 4) : -100.000000
+ at (0, 5) : -100.000000
+ at (1, 0) : 1.000000
+ at (1, 1) : 1.995273
+ at (1, 2) : 3.249464
+ at (1, 3) : 4.657087
+ at (1, 4) : 6.236910
+ at (1, 5) : 8.010000
+ at (1, 6) : 10.000000
+ at (2, 1) : -100.000000
+ at (2, 2) : -100.000000
+ at (2, 3) : -100.000000
+ at (2, 4) : -100.000000
+ at (2, 5) : -100.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 1) move exit 
+at (0, 2) move exit 
+at (0, 3) move exit 
+at (0, 4) move exit 
+at (0, 5) move exit 
+at (1, 0) move exit 
+at (1, 1) move east 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move east 
+at (1, 5) move east 
+at (1, 6) move exit 
+at (2, 1) move exit 
+at (2, 2) move exit 
+at (2, 3) move exit 
+at (2, 4) move exit 
+at (2, 5) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 4.024253
+ at (0, 1) : 5.017350
+ at (0, 2) : 5.824877
+ at (0, 3) : 6.657168
+ at (0, 4) : 7.496475
+ at (1, 0) : 3.030839
+ at (1, 2) : 5.995630
+ at (1, 3) : 7.496475
+ at (1, 4) : 8.651773
+ at (2, 0) : 1.878674
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.944742
+ at (3, 1) : 1.622337
+ at (3, 2) : 3.305450
+ at (3, 3) : 5.717663
+ at (3, 4) : 8.477335
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move east 
+at (3, 2) move east 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 2.250299
+ at (0, 1) : 2.934610
+ at (0, 2) : 3.755598
+ at (0, 3) : 4.758286
+ at (0, 4) : 6.010952
+ at (1, 0) : 1.701470
+ at (1, 2) : 4.517655
+ at (1, 3) : 6.010952
+ at (1, 4) : 7.750436
+ at (2, 0) : 1.177888
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 1.232726
+ at (3, 1) : 2.216349
+ at (3, 2) : 3.510920
+ at (3, 3) : 5.376330
+ at (3, 4) : 7.724011
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move east 
+at (3, 1) move east 
+at (3, 2) move east 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 1.784440
+ at (0, 1) : 2.520191
+ at (0, 2) : 3.346022
+ at (0, 3) : 4.338531
+ at (0, 4) : 5.549711
+ at (1, 0) : 1.210739
+ at (1, 2) : 3.894554
+ at (1, 3) : 5.549711
+ at (1, 4) : 7.438581
+ at (2, 0) : 0.692750
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.319719
+ at (3, 1) : 0.509199
+ at (3, 2) : 1.983673
+ at (3, 3) : 4.225087
+ at (3, 4) : 7.323850
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move east 
+at (3, 2) move east 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.806714
+ at (0, 1) : 1.501344
+ at (0, 2) : 2.295161
+ at (0, 3) : 3.258013
+ at (0, 4) : 4.326091
+ at (1, 0) : 0.403383
+ at (1, 2) : 2.573426
+ at (1, 3) : 4.326091
+ at (1, 4) : 6.528788
+ at (2, 0) : 0.155865
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.089089
+ at (3, 1) : 0.269426
+ at (3, 2) : 0.856381
+ at (3, 3) : 2.117303
+ at (3, 4) : 6.111545
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move north 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.806714
+ at (0, 1) : 1.501344
+ at (0, 2) : 2.295161
+ at (0, 3) : 3.258013
+ at (0, 4) : 4.326091
+ at (1, 0) : 0.403383
+ at (1, 2) : 2.573426
+ at (1, 3) : 4.326091
+ at (1, 4) : 6.528788
+ at (2, 0) : 0.155865
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.089089
+ at (3, 1) : 0.269426
+ at (3, 2) : 0.856381
+ at (3, 3) : 2.117303
+ at (3, 4) : 6.111545
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move north 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.806714
+ at (0, 1) : 1.501344
+ at (0, 2) : 2.295161
+ at (0, 3) : 3.258013
+ at (0, 4) : 4.326091
+ at (1, 0) : 0.403383
+ at (1, 2) : 2.573426
+ at (1, 3) : 4.326091
+ at (1, 4) : 6.528788
+ at (2, 0) : 0.155865
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.089089
+ at (3, 1) : 0.269426
+ at (3, 2) : 0.856381
+ at (3, 3) : 2.117303
+ at (3, 4) : 6.111545
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move north 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.007558
+ at (0, 1) : 0.028482
+ at (0, 2) : 0.099848
+ at (0, 3) : 0.249891
+ at (0, 4) : 0.718534
+ at (1, 0) : 0.002095
+ at (1, 2) : 0.323342
+ at (1, 3) : 0.718534
+ at (1, 4) : 2.671169
+ at (2, 0) : 0.000752
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.002655
+ at (3, 1) : 0.028343
+ at (3, 2) : 0.266698
+ at (3, 3) : 0.305451
+ at (3, 4) : 2.635251
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move south 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move south 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move south 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move north 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.102035
+ at (0, 1) : 0.251960
+ at (0, 2) : 0.544368
+ at (0, 3) : 1.046261
+ at (0, 4) : 1.921880
+ at (1, 0) : 0.040580
+ at (1, 2) : 0.875502
+ at (1, 3) : 1.921880
+ at (1, 4) : 4.352474
+ at (2, 0) : 0.013509
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.015723
+ at (3, 1) : 0.091330
+ at (3, 2) : 0.475946
+ at (3, 3) : 0.877438
+ at (3, 4) : 4.210235
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move north 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.018784
+ at (0, 1) : 0.055731
+ at (0, 2) : 0.160300
+ at (0, 3) : 0.429333
+ at (0, 4) : 1.144899
+ at (1, 0) : 0.006429
+ at (1, 2) : 0.412775
+ at (1, 3) : 1.144899
+ at (1, 4) : 3.381037
+ at (2, 0) : 0.002100
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.001462
+ at (3, 1) : 0.020597
+ at (3, 2) : 0.348992
+ at (3, 3) : 0.704225
+ at (3, 4) : 3.362676
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.018784
+ at (0, 1) : 0.055731
+ at (0, 2) : 0.160300
+ at (0, 3) : 0.429333
+ at (0, 4) : 1.144899
+ at (1, 0) : 0.006429
+ at (1, 2) : 0.412775
+ at (1, 3) : 1.144899
+ at (1, 4) : 3.381037
+ at (2, 0) : 0.002100
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.001462
+ at (3, 1) : 0.020597
+ at (3, 2) : 0.348992
+ at (3, 3) : 0.704225
+ at (3, 4) : 3.362676
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move east 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move east 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.006187
+ at (0, 1) : 0.022478
+ at (0, 2) : 0.080753
+ at (0, 3) : 0.219284
+ at (0, 4) : 0.757875
+ at (1, 0) : 0.001722
+ at (1, 2) : 0.285653
+ at (1, 3) : 0.757875
+ at (1, 4) : 2.752658
+ at (2, 0) : 0.000478
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.000217
+ at (3, 1) : 0.005739
+ at (3, 2) : 0.279110
+ at (3, 3) : 0.601599
+ at (3, 4) : 2.750278
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move south 
+at (0, 3) move east 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move south 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.000068
+ at (0, 1) : 0.000747
+ at (0, 2) : 0.008221
+ at (0, 3) : 0.007821
+ at (0, 4) : 0.081893
+ at (1, 0) : 0.000006
+ at (1, 2) : 0.090864
+ at (1, 3) : 0.081893
+ at (1, 4) : 0.904934
+ at (2, 0) : 0.000001
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.000003
+ at (3, 1) : 0.000495
+ at (3, 2) : 0.090160
+ at (3, 3) : 0.031579
+ at (3, 4) : 0.904681
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move south 
+at (0, 3) move south 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move south 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+ q-values 
+ at (0, 0) for moving north : 0.000010 
+at (0, 0) for moving west : 0.000006 
+at (0, 0) for moving south : 0.000005 
+at (0, 0) for moving east : 0.000068 
+at (0, 1) for moving north : 0.000109 
+at (0, 1) for moving west : 0.000014 
+at (0, 1) for moving south : 0.000109 
+at (0, 1) for moving east : 0.000747 
+at (0, 2) for moving north : 0.000783 
+at (0, 2) for moving west : 0.000563 
+at (0, 2) for moving south : 0.008221 
+at (0, 2) for moving east : 0.001199 
+at (0, 3) for moving north : 0.001154 
+at (0, 3) for moving west : 0.001188 
+at (0, 3) for moving south : 0.007821 
+at (0, 3) for moving east : 0.007819 
+at (0, 4) for moving north : 0.007819 
+at (0, 4) for moving west : 0.005638 
+at (0, 4) for moving south : 0.081893 
+at (0, 4) for moving east : 0.012304 
+at (1, 0) for moving north : 0.000006 
+at (1, 0) for moving west : 0.000001 
+at (1, 0) for moving south : 0.000000 
+at (1, 0) for moving east : 0.000001 
+at (1, 2) for moving north : 0.001604 
+at (1, 2) for moving west : 0.013219 
+at (1, 2) for moving south : 0.090864 
+at (1, 2) for moving east : 0.012411 
+at (1, 3) for moving north : 0.005683 
+at (1, 3) for moving west : 0.008626 
+at (1, 3) for moving south : 0.012349 
+at (1, 3) for moving east : 0.081893 
+at (1, 4) for moving north : 0.012304 
+at (1, 4) for moving west : 0.057780 
+at (1, 4) for moving south : 0.904934 
+at (1, 4) for moving east : 0.131854 
+at (2, 0) for moving north : 0.000001 
+at (2, 0) for moving west : 0.000000 
+at (2, 0) for moving south : 0.000000 
+at (2, 0) for moving east : 0.000000 
+at (2, 2) for moving exit : 1.000000 
+at (2, 4) for moving exit : 10.000000 
+at (3, 0) for moving north : 0.000003 
+at (3, 0) for moving west : -0.050000 
+at (3, 0) for moving south : -0.899998 
+at (3, 0) for moving east : -0.049955 
+at (3, 1) for moving north : 0.000495 
+at (3, 1) for moving west : -0.049997 
+at (3, 1) for moving south : -0.899549 
+at (3, 1) for moving east : -0.041883 
+at (3, 2) for moving north : 0.090160 
+at (3, 2) for moving west : -0.044955 
+at (3, 2) for moving south : -0.899840 
+at (3, 2) for moving east : -0.042158 
+at (3, 3) for moving north : 0.007816 
+at (3, 3) for moving west : -0.041728 
+at (3, 3) for moving south : -0.895026 
+at (3, 3) for moving east : 0.031579 
+at (3, 4) for moving north : 0.904681 
+at (3, 4) for moving west : 0.002842 
+at (3, 4) for moving south : -0.895319 
+at (3, 4) for moving east : 0.081421 
+at (4, 0) for moving exit : -10.000000 
+at (4, 1) for moving exit : -10.000000 
+at (4, 2) for moving exit : -10.000000 
+at (4, 3) for moving exit : -10.000000 
+at (4, 4) for moving exit : -10.000000 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.000005
+ at (0, 1) : 0.000108
+ at (0, 2) : 0.002262
+ at (0, 3) : 0.001106
+ at (0, 4) : 0.022622
+ at (1, 0) : 0.000000
+ at (1, 2) : 0.047588
+ at (1, 3) : 0.022622
+ at (1, 4) : 0.475623
+ at (2, 0) : 0.000000
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.000000
+ at (3, 1) : 0.000062
+ at (3, 2) : 0.047513
+ at (3, 3) : 0.010104
+ at (3, 4) : 0.475607
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move south 
+at (0, 3) move south 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move south 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+ q-values 
+ at (0, 0) for moving north : 0.000000 
+at (0, 0) for moving west : 0.000000 
+at (0, 0) for moving south : 0.000000 
+at (0, 0) for moving east : 0.000005 
+at (0, 1) for moving north : 0.000008 
+at (0, 1) for moving west : 0.000001 
+at (0, 1) for moving south : 0.000008 
+at (0, 1) for moving east : 0.000108 
+at (0, 2) for moving north : 0.000109 
+at (0, 2) for moving west : 0.000067 
+at (0, 2) for moving south : 0.002262 
+at (0, 2) for moving east : 0.000115 
+at (0, 3) for moving north : 0.000084 
+at (0, 3) for moving west : 0.000137 
+at (0, 3) for moving south : 0.001106 
+at (0, 3) for moving east : 0.001104 
+at (0, 4) for moving north : 0.001104 
+at (0, 4) for moving west : 0.000675 
+at (0, 4) for moving south : 0.022622 
+at (0, 4) for moving east : 0.001697 
+at (1, 0) for moving north : 0.000000 
+at (1, 0) for moving west : 0.000000 
+at (1, 0) for moving south : 0.000000 
+at (1, 0) for moving east : 0.000000 
+at (1, 2) for moving north : 0.000195 
+at (1, 2) for moving west : 0.003513 
+at (1, 2) for moving south : 0.047588 
+at (1, 2) for moving east : 0.002327 
+at (1, 3) for moving north : 0.000707 
+at (1, 3) for moving west : 0.002290 
+at (1, 3) for moving south : 0.001729 
+at (1, 3) for moving east : 0.022622 
+at (1, 4) for moving north : 0.001697 
+at (1, 4) for moving west : 0.013603 
+at (1, 4) for moving south : 0.475623 
+at (1, 4) for moving east : 0.035120 
+at (2, 0) for moving north : 0.000000 
+at (2, 0) for moving west : 0.000000 
+at (2, 0) for moving south : 0.000000 
+at (2, 0) for moving east : 0.000000 
+at (2, 2) for moving exit : 1.000000 
+at (2, 4) for moving exit : 10.000000 
+at (3, 0) for moving north : 0.000000 
+at (3, 0) for moving west : -0.012500 
+at (3, 0) for moving south : -0.475000 
+at (3, 0) for moving east : -0.012497 
+at (3, 1) for moving north : 0.000062 
+at (3, 1) for moving west : -0.012500 
+at (3, 1) for moving south : -0.474941 
+at (3, 1) for moving east : -0.010243 
+at (3, 2) for moving north : 0.047513 
+at (3, 2) for moving west : -0.011247 
+at (3, 2) for moving south : -0.474987 
+at (3, 2) for moving east : -0.010770 
+at (3, 3) for moving north : 0.001134 
+at (3, 3) for moving west : -0.010231 
+at (3, 3) for moving south : -0.474346 
+at (3, 3) for moving east : 0.010104 
+at (3, 4) for moving north : 0.475607 
+at (3, 4) for moving west : 0.000480 
+at (3, 4) for moving south : -0.474393 
+at (3, 4) for moving east : 0.022591 
+at (4, 0) for moving exit : -10.000000 
+at (4, 1) for moving exit : -10.000000 
+at (4, 2) for moving exit : -10.000000 
+at (4, 3) for moving exit : -10.000000 
+at (4, 4) for moving exit : -10.000000 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.000001
+ at (0, 1) : 0.000026
+ at (0, 2) : 0.000882
+ at (0, 3) : 0.000264
+ at (0, 4) : 0.008824
+ at (1, 0) : 0.000000
+ at (1, 2) : 0.029706
+ at (1, 3) : 0.008824
+ at (1, 4) : 0.297046
+ at (2, 0) : 0.000000
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.000000
+ at (3, 1) : 0.000005
+ at (3, 2) : 0.029701
+ at (3, 3) : 0.007323
+ at (3, 4) : 0.297046
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move east 
+at (0, 1) move east 
+at (0, 2) move south 
+at (0, 3) move south 
+at (0, 4) move south 
+at (1, 0) move north 
+at (1, 2) move south 
+at (1, 3) move east 
+at (1, 4) move south 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move east 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 
+
+
+ Testing the ValueIterationAgent on the DiscountGrid 
+
+ values 
+ at (-1, -1) : 0.000000
+ at (0, 0) : 0.000000
+ at (0, 1) : 0.000000
+ at (0, 2) : 0.000000
+ at (0, 3) : 0.000000
+ at (0, 4) : 0.000000
+ at (1, 0) : 0.000000
+ at (1, 2) : 0.000000
+ at (1, 3) : 0.000000
+ at (1, 4) : 0.000000
+ at (2, 0) : 0.000000
+ at (2, 2) : 1.000000
+ at (2, 4) : 10.000000
+ at (3, 0) : 0.000000
+ at (3, 1) : 0.000000
+ at (3, 2) : 0.000000
+ at (3, 3) : 0.000000
+ at (3, 4) : 0.000000
+ at (4, 0) : -10.000000
+ at (4, 1) : -10.000000
+ at (4, 2) : -10.000000
+ at (4, 3) : -10.000000
+ at (4, 4) : -10.000000
+ 
+ policy 
+ at (-1, -1) move None 
+at (0, 0) move north 
+at (0, 1) move north 
+at (0, 2) move north 
+at (0, 3) move north 
+at (0, 4) move north 
+at (1, 0) move north 
+at (1, 2) move north 
+at (1, 3) move north 
+at (1, 4) move north 
+at (2, 0) move north 
+at (2, 2) move exit 
+at (2, 4) move exit 
+at (3, 0) move north 
+at (3, 1) move north 
+at (3, 2) move north 
+at (3, 3) move north 
+at (3, 4) move north 
+at (4, 0) move exit 
+at (4, 1) move exit 
+at (4, 2) move exit 
+at (4, 3) move exit 
+at (4, 4) move exit 

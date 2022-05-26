@@ -43,17 +43,13 @@ class PolicyIterationAgent(Agent):
                     #
                     # else:...
                     newV[s] = 0
-                    if s == self.mdp.terminalState:
-                        newV[s] = 0
-                    else:
+                    if s != self.mdp.terminalState:
                         # result of getTransitionStatesAndProbs will be like [[new_state_1, prob_1], [new_state_2, prob_2]]
-                        reward = self.mdp.getReward(s, None, None)
                         ### For random policy
                         # for action in self.mdp.getPossibleActions(s):
                         #     for real_dir in self.mdp.getTransitionStatesAndProbs(s, action):
                         #         newV[s] += 0.25 * real_dir[1] * (reward + self.discount * self.V[real_dir[0]])
-                        for action in self.mdp.getTransitionStatesAndProbs(s, a):
-                            newV[s] += action[1] * (reward + self.discount * self.V[action[0]])
+                        newV[s] = self.getQValue(s, a)
                 
                 self.V = newV
 

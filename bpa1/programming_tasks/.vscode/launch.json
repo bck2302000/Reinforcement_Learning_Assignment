@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["-a", "policyiter", "-g", "CliffGrid2", "-i", "10"]
+            "args": ["-a", "q", "-g", "BookGrid", "-i", "10", "-k", "100"]
         }
     ]
 }
