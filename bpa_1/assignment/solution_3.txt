@@ -7,11 +7,6 @@ Answers:
         a) Value at state (1, 5): 0
         b) Optimal policy : no
         c) Name of parameter: number of episode, 300000 (as large as possible)
-=======
-        a) Value at state (1, 5): 0.0
-        b) Optimal policy : no
-        c) Name of parameter: epsilon
->>>>>>> 675189fefde3fc2c76e0a938bfcb169648923585
 
 7) 	Comparison of values for the start state:
         1) Value of the start state after 300 episodes: 4.31
