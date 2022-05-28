@@ -4,7 +4,6 @@ Answers:
 
 
 6) 	Training the Q-learning agent without noise:
-<<<<<<< HEAD
         a) Value at state (1, 5): 0
         b) Optimal policy : no
         c) Name of parameter: number of episode, 300000 (as large as possible)
