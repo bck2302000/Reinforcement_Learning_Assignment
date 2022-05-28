@@ -4,13 +4,24 @@ Answers:
 
 
 6) 	Training the Q-learning agent without noise:
-        a) Value at state (1, 5): xxx
-        b) Optimal policy : yes / no
-        c) Name of parameter: xxx
+        a) Value at state (1, 5): 0
+        b) Optimal policy : no
+        c) Name of parameter: number of episode, 300000 (as large as possible)
 
 7) 	Comparison of values for the start state:
-        1) Value of the start state after 300 episodes: xxx
-        2) Average returns from the start state: xxx
+        1) Value of the start state after 300 episodes: 5.31
+        2) Average returns from the start state: -6.175461853199059
+        
+        At the beginning episodes, because we have not known the positive terminal, we will have so many episodes ending at cliff, which has a large penalty. These episodes
+        will bring a large negative effect to the averge return. However, in the later episodes, because the agent has learned the better policy, those episodes starting from
+        the start state has a high probability ending in the positive terminal. As a result, the value function at the start state will become positive. 
 
-8)  Faster converging algorithm? xxx
+8)  Faster converging algorithm? 
+        Value Iteration.
+        Q-Learning doesn't know the transition dynamics, so it has no choice but to keep sampling a lot. At the beginning, it will easily fall in the situation that stuck in 
+        somewhere and take long time to reach the terminal. On the contrary, value iteration can directly update whole states without wasting time finding a route to the 
+        terminal. That's the main reason that Q-Learning will converges much slower than value iteration. 
+        
+
+        
 
