@@ -4,13 +4,14 @@ Answers:
 
 
 6) 	Training the Q-learning agent without noise:
-        a) Value at state (1, 5): xxx
-        b) Optimal policy : yes / no
-        c) Name of parameter: xxx
+        a) Value at state (1, 5): 0.0
+        b) Optimal policy : no
+        c) Name of parameter: episodes=250000
 
 7) 	Comparison of values for the start state:
-        1) Value of the start state after 300 episodes: xxx
-        2) Average returns from the start state: xxx
+        1) Value of the start state after 300 episodes: 4.304672100000001
+        2) Average returns from the start state: -6.175461853199059
+	why??
 
-8)  Faster converging algorithm? xxx
+8)  Faster converging algorithm? Value Iteration
 
