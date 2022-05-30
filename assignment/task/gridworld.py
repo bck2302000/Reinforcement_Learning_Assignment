@@ -7,7 +7,7 @@ from gridworldClass import Gridworld
 from RandomAgent import RandomAgent
 from PolicyIterationAgent import PolicyIterationAgent
 from ValueIterationAgent import ValueIterationAgent
-#from QLearningAgent import QLearningAgent
+from QLearningAgent import QLearningAgent
 import numpy as np
 
 # THE FOLLOWING AGENTS WILL BE COMPLETED DURING THE TASKS
