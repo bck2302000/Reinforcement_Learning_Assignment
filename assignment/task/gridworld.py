@@ -5,6 +5,9 @@ import environment
 import mdp
 from gridworldClass import Gridworld
 from RandomAgent import RandomAgent
+from PolicyIterationAgent import PolicyIterationAgent
+#from ValueIterationAgent import ValueIterationAgent
+#from QLearningAgent import QLearningAgent
 import numpy as np
 
 # THE FOLLOWING AGENTS WILL BE COMPLETED DURING THE TASKS
@@ -60,7 +63,10 @@ def getCliffGrid2():
     print('not implemented')  # remove this after implementing the gridworld
     # **********
     # TODO 1.7
-
+    grid = [[' ', ' ', ' ', ' ', ' '],
+            [8, 'S', ' ', ' ', 10],
+            [-100, -100, -100, -100, -100]]
+    return Gridworld(grid)
     # **********
 
 
