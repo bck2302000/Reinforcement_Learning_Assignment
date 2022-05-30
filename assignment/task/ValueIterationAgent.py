@@ -19,7 +19,7 @@ class ValueIterationAgent(Agent):
         # *************
         #  TODO 2.1 a)
         # self.V = ...
-
+        self.V = {s: 0 for s in states}
         # ************
 
         for i in range(iterations):
@@ -28,13 +28,16 @@ class ValueIterationAgent(Agent):
                 actions = self.mdp.getPossibleActions(s)
                 # **************
                 # TODO 2.1. b)
-                # if ...
+                if len(actions) < 1:
+                    newV[s] = 0.0
                 #
-                # else: ...
+                else:
+                    q_value = ([self.getQValue(s, a) for a in actions])
+                    newV[s] = max(q_value)
 
                 # Update value function with new estimate
                 # self.V =
-
+            self.V = newV
                 # ***************
 
     def getValue(self, state):
@@ -44,7 +47,7 @@ class ValueIterationAgent(Agent):
         """
         # **********
         # TODO 2.2
-
+        return self.V[state]
         # **********
 
     def getQValue(self, state, action):
@@ -57,7 +60,10 @@ class ValueIterationAgent(Agent):
         """
         # ***********
         # TODO 2.3.
-
+        reward = self.mdp.getReward(state, action, None)
+        pair = self.mdp.getTransitionStatesAndProbs(state, action)
+        q_value = np.sum([prob * (reward + self.discount * self.V[next_state]) for next_state, prob in pair])
+        return q_value
         # **********
 
     def getPolicy(self, state):
@@ -70,11 +76,14 @@ class ValueIterationAgent(Agent):
         if len(actions) < 1:
             return None
 
-        else:
+
 
         # **********
         # TODO 2.4
-
+        else:
+            q_value = [self.getQValue(state, a) for a in actions]
+            idx = np.argmax(q_value)
+            return actions[idx]
         # ***********
 
     def getAction(self, state):

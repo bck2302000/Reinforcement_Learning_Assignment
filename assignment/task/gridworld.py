@@ -6,7 +6,7 @@ import mdp
 from gridworldClass import Gridworld
 from RandomAgent import RandomAgent
 from PolicyIterationAgent import PolicyIterationAgent
-#from ValueIterationAgent import ValueIterationAgent
+from ValueIterationAgent import ValueIterationAgent
 #from QLearningAgent import QLearningAgent
 import numpy as np
 
