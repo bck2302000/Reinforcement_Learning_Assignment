@@ -21,8 +21,8 @@ class PolicyIterationAgent(Agent):
         # Policy initialization
         # ******************
         # TODO 1.1.a)
-        # self.V = ...
-        
+
+        self.V = {s: 0 for s in states}
         # *******************
 
         self.pi = {s: self.mdp.getPossibleActions(s)[-1] if self.mdp.getPossibleActions(s) else None for s in states}
@@ -37,12 +37,15 @@ class PolicyIterationAgent(Agent):
                     a = self.pi[s]
                     # *****************
                     # TODO 1.1.b)
-                    # if...
+                    if a == None:
+                        newV[s] = 0.0
                     #
-                    # else:...
+                    else:
+                        # Transitions deterministic
+                        newV[s] = self.getQValue(s, a)
 
                 # update value estimate
-                # self.V=...
+                self.V = newV
 
                 # ******************
 
@@ -56,9 +59,12 @@ class PolicyIterationAgent(Agent):
                     # ************
                     # TODO 1.1.c)
                     # self.pi[s] = ...
-
+                    q_value = [self.getQValue(s, a) for a in actions]
+                    idx = np.argmax(q_value)
+                    self.pi[s] = actions[idx]
                     # policy_stable =
-
+                    if self.pi[s] != old_action:
+                        policy_stable = False
                     # ****************
             counter += 1
 
@@ -72,7 +78,7 @@ class PolicyIterationAgent(Agent):
         """
         # *******
         # TODO 1.2.
-
+        return self.V[state]
         # ********
 
     def getQValue(self, state, action):
@@ -85,7 +91,10 @@ class PolicyIterationAgent(Agent):
         """
         # *********
         # TODO 1.3.
-
+        reward = self.mdp.getReward(state, action, None)
+        pair = self.mdp.getTransitionStatesAndProbs(state, action)
+        q_value = np.sum([prob * (reward + self.discount * self.V[next_state]) for next_state, prob in pair])
+        return q_value
         # **********
 
     def getPolicy(self, state):
@@ -95,7 +104,7 @@ class PolicyIterationAgent(Agent):
         """
         # **********
         # TODO 1.4.
-
+        return self.pi[state]
         # **********
 
     def getAction(self, state):
