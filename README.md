@@ -13,7 +13,7 @@ Modified by Jiandong Chen
   - [x] Programming part (1.1-1.5)
   - [ ] solution_2.txt (1.6-1.9)
 
-- [ ] Task 3
+- [x] Task 3
 
   - [x] Programming part (1.1-1.5)
-  - [ ] solution_3.txt (1.6-1.9)
+  - [x] solution_3.txt (1.6-1.9)

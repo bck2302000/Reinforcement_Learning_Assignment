@@ -6,9 +6,8 @@ Answers:
 6) 	Rounds of value iteration for start state to become non-zero: 10
     Why? 
     Firstly, in each round of iteration, we only perform one sweep. In order to change the value, we need the sum of dynamics * (reward + discount * next_state_value) to be non-zero.
-    In MazeGrid, We initialize all state value to zero, and the only non-zero reward is in terminal state. Therefore, we need the value to propagate from terminal state to initial state, 
-	then we can update the corresponding value.
-	In this case, this question can be solved by finding the shortest path from terminal state to initial state, which is 10.
+    In MazeGrid, We initialize all state value to zero, and the only non-zero reward is in terminal state. Therefore, the value of state next to terminal state will be updated first, then value of the state next to this state will be updated in next round, and we continue updating the values in this way until the value of initial state is updated. 
+    In this case, this question can be solved by finding the shortest path from terminal state to initial state, which is 10.
 
 7) 	Which parameter to change: noise
 	Value of the changed parameter: 0.01
@@ -21,7 +20,7 @@ Answers:
 	    e) -n 0.0 -d 0.0
 
 9) 	Pros: 								Cons:
-	-									- Requires a full policy evaluation for each updated policy
+	- Do not perform max operation.     - Requires a full policy evaluation for each updated policy
 	-									- Requires iterative computation with typically multiple sweeps through the state set
 	-									- Can be computationally expensive
 
