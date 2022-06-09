@@ -21,6 +21,7 @@ Answers:
 
 9) 	Pros: 								Cons:
 	- Do not perform max operation.     - Requires a full policy evaluation for each updated policy
-	-									- Requires iterative computation with typically multiple sweeps through the state set
-	-									- Can be computationally expensive
-
+	- Only consider current action  	- Requires iterative computation with typically multiple sweeps through the state set
+      for each state at each iteration
+	- Using converged values to improve - Can be computationally expensive
+      the policy
