@@ -1,0 +1,25 @@
+name: rllbc_bpa2
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - matplotlib
+  - scipy
+  - pandas
+  - seaborn
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - swig
+  - pybox2d
+  - gym
+  - pip
+  - pip:
+    - numpy
+    - tqdm
+    - gym[classic_control]
+    - pyvirtualdisplay
+    - pathlib
+
+ 
